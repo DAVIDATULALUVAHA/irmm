@@ -1,0 +1,282 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>David Luvaha</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="AboutMe.html">About Me</a></li>
+							<li><a href="InductionModule.html">Learnong Outcomes of NISM Module</a></li>
+							<li><a href="NISMdiscussion1.html">Collaborative Learning Discussion 1</a></li>
+							<li><a href="NISMdiscussion2.html">Collaborative Learning Discussion 2</a></li>
+							<li><a href="NISMdiscussion3.html">Collaborative Learning Discussion 3</a></li>
+							<li><a href="teamactivity1.html">Five Team Activity</a></li>
+							<li><a href="teamreports.html">Team Reports</a></li>
+							<li><a href="meetings.html">Meeting Notes</a></li>
+							<li><a href="Seminar3preparation.html">Seminars</a></li>
+							<li><a href="reflection.html">Reflections</a></li>
+							<li><a href="matrix.html">Skills Matrix and Action Plan</a></li>
+														
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+								<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+	
+				<header class="major">
+				<h3>A. Target Website Configuration</h3>
+				
+                
+				</header>
+				<font size="3" face="Arial"
+				<p align="justify"><small>The objectives of Practical and Team activity was:</small></p>
+				<ol>
+				<li> Recognize and investigate security threats and weaknesses in computer and decide suitable solutions.</li>
+				<li>Design and critically assess computer software and hardware to create solutions for audited threats.</li>	
+
+                 
+				</ol>
+				</font>	
+									
+							
+								
+			<font size="3" face="Arial" color="white"
+			<p align="justify">Students were divided into groups. I was a member of super group Five. In group five we came up with a group contract which was signed by all group members. Each group was then tasked to develop a website using AWSEducate resources and share the Website address and IP address with the opposite team. While working with my team member in group 5, although another team member was tasked to develop the website, for learning purposes, on the sidelines, i personally configured a ehealth website named http://ehealth-env.eba-d6shft2m.us-east-1.elasticbeanstalk.com/ with Private IP address: 172.31.33.240 and Allocated IPv4 address: 54.243.142.38. This website was later given to another group that had configuration problem to carryout the pentest. The artifacts of the website that i configured are shown in Figure 1:EC2 configurations,Figure 2:Elastic IP Addresses and Figure 3 Elastic Beanstalk are shown below:<small></small></p>
+			                                                                                                                                   
+			
+
+			<center>
+				<span class="image">
+					<img src="images/ec2config.jpg" alt="" />
+				</span>
+			
+"
+			
+			
+			
+			</center>
+			<center>
+				<H3>Elastic IP Addresses for ehealth website?</H3>
+			</center>
+		          <center>
+				<span class="image">
+					<img src="images/elasticipaddresses.jpg" alt="" />
+				</span>
+			</center>
+			<center>
+				<H3>Elastic Beanstalk for ehealth website?</H3>
+			</center>
+		          <center>
+				<span class="image">
+					<img src="images/elasticbeanstalk.jpg" alt="" />
+				</span>
+			</center>
+			
+			</font>		
+			
+		   <header class="major">
+				<h2>B. Reconnaissance scans conducted on the Target Website</h2>
+			   
+				</header>
+			 <font size="3" face="Arial" color="white"
+			 
+			 
+			 			 
+			 
+			 
+			 
+			 
+			<p align="justify">Recon scans conducted on the opposite teams’ website  named http://www.teamnebula.us-east-1.elasticbeanstalk.com IP address 18.235.155.131 revealed the results indicated below: <small></small></p>	
+			
+			</font>
+			<ol>
+
+				<li>
+                  How many hops from your machine to your assigned website? using Tracert, each team member had different result. Majority of the had between 13-30 hops, with 1-30ms TTL.
+				</li>
+				<center>
+				   <span class="image">
+					<img src="images/hops.jpg" alt="" />
+				</span>
+				</center>
+				<li>
+				Which step causes the biggest delay in the route? <font size="4" face="Arial" color="red"<strong>Step 14</strong></font>  What is the average duration of that delay?<font size="4" face="Arial" color="red"<strong>200ms</strong></font>
+
+				</li>
+				<li>
+				What are the main nameservers for the website? WHOIS revealed the nameservers below:
+               <center>
+			   <span class="image">
+					<img src="images/nameservers.jpg" alt="" />
+				</span>
+				</center>
+				</li>
+				<li>
+				Who is the registered contact? WHOIS revealed the registered contact below:
+				<center>
+				<span class="image">
+					<img src="images/contacts.jpg" alt="" />
+				</span>
+				</center>		
+				
+				<li>
+				What is the MX record for the website?<font size="4" face="Arial" color="red"<strong> No MX records were revealed.</font>
+				</li>
+				<li>
+				Where is the website hosted?<font size="4" face="Arial" color="red"<strong> The website is hosted in City : Ashburn, Region : Virginia, Country : US, Postal : 20149.</font>
+
+				</li>
+			 
+			
+					
+			
+			<header class="major">
+				<h2>C. Scanning Exercise and Collaborative Learning Wiki</h2>
+			</header>
+			 
+			  <font size="3" face="Arial" color="white"
+			<p align="justify">The aim of this assignment was to perform scans against our assigned website using the tools available in Kali Linux. However i used other available tools because i was not able to download and use Kali Linux because of bandwidth problems. I was then able to answer the following questions:</p>	
+			</font>
+			<ol>
+
+				<li>
+				What Operating System does the web site utilise? <font size="4" face="Arial" color="red"<strong> Apache.</font>
+				</li>
+				
+				<li>
+				 What web server software is it running? <font size="4" face="Arial" color="red"<strong> Apache webserver.</font>
+				</li>
+			     <li>
+				 Is it running a CMS (Wordpress, Drupal, etc) <font size="4" face="Arial" color="red"<strong> It is running Ruby on Rails, Next.js and WordPress.</font>
+				</li>
+				<center>
+				<span class="image">
+					<img src="images/cmc.jpg" alt="" />
+				</span>
+				</center>
+				 <li>
+				 What protection does it have (CDN, Proxy, Firewall?)<font size="4" face="Arial" color="red"<strong>Firewall protection  </font>
+				 </li>
+				 <center>
+				<span class="image">
+					<img src="images/firewall.jpg" alt="" />
+				</span>
+				 	</center>		 
+				</li>
+				<li>
+				Where is it hosted? <font size="4" face="Arial" color="red"<strong> teamnebula.us-east-1.elasticbeanstalk.com , (user) ec2-107-20-143-245.compute-1.amazonaws.com (PTR) and Amazon AWS.</font>
+				</li>
+			 
+			    <li>
+				 Does it have any open ports? <font size="4" face="Arial" color="red"<strong> Open TCP Port: 22 (1 occurence), Open TCP Port: 80 (1 occurence).</font>
+				</li>
+			     <center>
+				 <span class="image">
+					<img src="images/openports.jpg" alt="" />
+				</span>
+			    </center>
+				<li>
+				 Does the site have any known vulnerabilities? <font size="4" face="Arial" color="red"<strong> 1. Communication is made over unsecure, unencrypted HTTP.  2. Response headers do not include the HTTP Content-Security-Policy, HTTP X-Frame-Options, HTTP X-XSS-Protection, X-Content-Type-Options HTTP and  security header. 3 No Anti-CSRF tokens were found in a HTML submission form, 4.
+					SSH Weak Encryption Algorithms Supported (1 occurence), 5. MacOS X Finder '.DS_Store' Information Disclosure (1 occurence).</font>
+				</li>
+			 
+			     <li>
+				 What versions of software is it using? <font size="4" face="Arial" color="red"<strong> Apache webserver, Twitter Bootstrap Web Frameworks and jQuery 1.8.3 JavaScript Frameworks..</font>
+				</li>
+				<center>
+			      <span class="image">
+					<img src="images/softwareversion.jpg" alt="" />
+				</span>
+			   </center>
+			   <li>
+				 Are these patched so that they are up to date? <font size="4" face="Arial" color="red"<strong> NO.</font>
+				</li>
+				<center>
+			 	   <span class="image">
+					<img src="images/zapscanning.jpg" alt="" />
+				</span>	
+				</center>				
+			</ol>
+			
+				
+		   </font>	
+		   </div>
+						
+										
+			
+					
+		   </font>
+
+			<header class="major">
+				<h2>Personal opinion about all the above Activites</h2>
+			</header>
+			 
+			  <font size="3" face="Arial" color="white"
+			<p align="justify">Having personnaly configured the website, conducted a reconnaissance scans aganist the target website and further perfomed the penetration scan, my knowledge and skills on how a successful pentest is conducted has been tremendously increased and enhanced unlike when i started the Module. Knowledge and skill gained will go a long way to enhance my approach to future modules because i will approach them from an informed postion. Additionally, my confidence in the subject matter has increased. </p>	
+			</font>
+			<ol>
+
+
+		   
+		   </div>
+			    <center>
+						<ul class="actions stacked">
+							<li><a href="index.html">Home</a></li>
+						</ul>
+							
+				</center>
+         
+						
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							
+							<ul class="copyright">
+								<li>&copy; Adopted and modified</li><li> from: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
